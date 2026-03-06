@@ -31,11 +31,11 @@ Download the latest release ZIP from the [Releases](../../releases) page.
 
 ```bash
 # Unzip and copy the folder to the Omeka S modules directory
-unzip OaiPmhUnimarc.zip -d /var/www/html/omk/modules/
+unzip OaiPmhUnimarc.zip -d /path/to/folder/modules/
 
 # Set correct permissions
-chown -R www-data:www-data /var/www/html/omk/modules/OaiPmhUnimarc
-chmod -R 755 /var/www/html/omk/modules/OaiPmhUnimarc
+chown -R user:user /path/to/folder/modules/OaiPmhUnimarc
+chmod -R 755 /path/to/folder/modules/OaiPmhUnimarc
 ```
 
 ### 3. Enable in the admin panel
