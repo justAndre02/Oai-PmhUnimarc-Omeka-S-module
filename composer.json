@@ -1,0 +1,20 @@
+{
+    "name": "usdb/oai-pmh-unimarc",
+    "description": "Exposes Omeka S items in UNIMARC format via OAI-PMH for RNOD (National Library of Portugal)",
+    "type": "omeka-s-module",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "André Freitas",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "OaiPmhUnimarc\\": "src/"
+        }
+    }
+}
