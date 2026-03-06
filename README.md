@@ -52,7 +52,7 @@ settings. No manual database configuration is required.
 Access the OAI-PMH endpoint:
 
 ```
-http://YOUR-SERVER/omk/oai?verb=ListMetadataFormats
+http://YOUR-SERVER/oai?verb=ListMetadataFormats
 ```
 
 The `oai_unimarc` format should appear in the list of supported formats.
@@ -60,13 +60,13 @@ The `oai_unimarc` format should appear in the list of supported formats.
 ### 5. Test an individual record
 
 ```
-http://YOUR-SERVER/omk/oai?verb=GetRecord&metadataPrefix=oai_unimarc&identifier=oai:YOUR-DOMAIN:1
+http://YOUR-SERVER/oai?verb=GetRecord&metadataPrefix=oai_unimarc&identifier=oai:YOUR-DOMAIN:1
 ```
 
 ### 6. Test the complete listing
 
 ```
-http://YOUR-SERVER/omk/oai?verb=ListRecords&metadataPrefix=oai_unimarc
+http://YOUR-SERVER/oai?verb=ListRecords&metadataPrefix=oai_unimarc
 ```
 
 ---
@@ -150,7 +150,7 @@ After verifying the endpoint works correctly, register your repository with RNOD
 using the OAI-PMH base endpoint:
 
 ```
-https://YOUR-DOMAIN/omk/oai
+https://YOUR-DOMAIN/oai
 ```
 
 RNOD will automatically harvest records using the `oai_unimarc` format.
@@ -158,7 +158,7 @@ RNOD will automatically harvest records using the `oai_unimarc` format.
 For site-specific repositories (by-site mode):
 
 ```
-https://YOUR-DOMAIN/omk/site/s/YOUR-SITE-SLUG/oai
+https://YOUR-DOMAIN/site/s/YOUR-SITE-SLUG/oai
 ```
 
 ---
